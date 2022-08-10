@@ -1,0 +1,46 @@
+{
+  // Pagina de producto en especifico para el cliente
+  "store.product": {
+    "children": ["rich-text#BloqueReu","breadcrumb","flex-layout.row#main"]
+  },
+
+  // Definicion de bloque layout para producto
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  //La columna de la izquierda debe contener un ;product-images
+  "flex-layout.col#left": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true,
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "product-name",
+      "product-identifier.product",
+      "product-price",
+      "flex-layout.row#qty-sku",
+      "shipping-simulator",
+      "buy-button"
+    ]
+  },
+  "flex-layout.row#qty-sku": {
+    "children": [
+      "sku-selector",
+      "product-quantity"
+    ]
+  }
+  
+}

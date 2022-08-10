@@ -1,0 +1,16 @@
+{
+    //las estructuras de las secciones de la tienda se definen mediante templates, 
+    //que a su vez mandan a llamar los blocks correspondientes a cada modulo requerido para las diferentes
+    //funcionalidades de cada pagina de la tienda.
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  }
+}
