@@ -1,0 +1,25 @@
+//Anotaciones
+
+graphql
+
+vtex legacy
+
+jumboargentinaqadisco
+
+jumboargentinaqavea
+
+arcencohogarqa
+
+frederico.zanoniruiz@cencosud.com.ar
+
+//links
+https://docs.google.com/document/d/1zG0qd1tNlH4ILeN6mXGBtOSP2ywo5c2TUGJ1hK2ihxY/edit
+
+//curso vtex
+https://learn.vtex.com/docs/course-layout-blocks-step03slider-lang-en
+
+//info youtube vtex.io
+https://www.youtube.com/watch?v=rlgn28MtYuQ&ab_channel=VTEXLatam
+
+//curso youtube
+https://www.youtube.com/watch?v=BO2alKqRmPI&list=PLTmvmjdoacBR-Dimz5k_DV8-CyLGYfi9i&index=8&ab_channel=Iv%C3%A1nL%C3%B3pezLuna
