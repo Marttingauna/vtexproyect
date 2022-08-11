@@ -4,8 +4,17 @@
       "rich-text#BloqueReu",
       "info-card#button-right",
       "info-card#button-left",
+      
       "rich-text#Flex",
-      "flex-layout.row"
+      "flex-layout.row",
+
+      //Slider Layout
+      "slider-layout#home",
+
+      //Layout responsive para mobile y desktop
+      "responsive-layout.desktop#desktop", "responsive-layout.mobile#mobile"
+
+      
     ]
   },
   "rich-text#BloqueReu": {
@@ -40,9 +49,8 @@
       "textAlignment": "center"
     }
   },
-
+  
   /* Declaracion de flex layout */
-
   "rich-text#Flex": {
     "props": {
       "text": "**Ejercicio con flex layout**",
@@ -86,6 +94,8 @@
       "maxWidth": "100%"
     }
   }
+
+  
 
   
 }
