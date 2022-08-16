@@ -1,0 +1,30 @@
+{
+  "modal-trigger#first": {
+    "children": [
+      "rich-text#dividermodal",
+      "rich-text#trigger",
+      "modal-layout#first"
+    ]
+  },
+
+  "rich-text#dividermodal": {
+    "props": {
+      "text": "**Ejemplo modal trigger**"
+    }
+  },
+
+  "rich-text#trigger": {
+    "props": {
+      "text": "CLICK ACÁ"
+    }
+  },
+
+  "modal-layout#first": {
+    "children": ["rich-text#hello"]
+  },
+  "rich-text#hello": {
+    "props": {
+      "text": "Hola soy un modal"
+    }
+  }
+}

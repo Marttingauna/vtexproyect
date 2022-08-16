@@ -15,7 +15,10 @@
       "responsive-layout.desktop#desktop", "responsive-layout.mobile#mobile",
 
       //Ejemplo de Tab layouts
-      "tab-layout#home"
+      "tab-layout#home",
+      
+      //Modal accionado por un disparador
+      "modal-trigger#first"
     ]
   },
   "rich-text#BloqueReu": {

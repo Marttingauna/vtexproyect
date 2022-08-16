@@ -1,7 +1,14 @@
 {
   "tab-layout#home": {
-    "children": ["tab-list#home", "tab-content#home"]
+    "children": ["rich-text#dividertab", "tab-list#home", "tab-content#home"]
   },
+
+  "rich-text#dividertab": {
+    "props": {
+      "text": "**Ejemplo tab list**"
+    }
+  },
+
   "tab-list#home": {
     "children": [
       "tab-list.item#home1",
