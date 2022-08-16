@@ -16,9 +16,12 @@
 
       //Ejemplo de Tab layouts
       "tab-layout#home",
-      
+
       //Modal accionado por un disparador
-      "modal-trigger#first"
+      "modal-trigger#first",
+
+      //Vista rapida
+      "list-context.product-list"
     ]
   },
   "rich-text#BloqueReu": {

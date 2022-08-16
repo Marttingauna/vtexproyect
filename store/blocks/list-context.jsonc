@@ -1,0 +1,28 @@
+{
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "modal-trigger#quickview", //Agrego un disparador para el modal
+      "product-summary-name",
+      "product-selling-price"
+    ]
+  },
+
+  //Modal de vista rapida
+  "modal-trigger#quickview": {
+    "children": ["product-summary-image", "modal-layout#quickview"]
+  },
+  //Declaracion del bloque de vista rapida desde modal.
+  "modal-layout#quickview": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-sku-selector",
+      "product-summary-quantity",
+      "add-to-cart-button"
+    ]
+  }
+}
