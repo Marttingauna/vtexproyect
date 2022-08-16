@@ -12,9 +12,10 @@
       "slider-layout#home",
 
       //Layout responsive para mobile y desktop
-      "responsive-layout.desktop#desktop", "responsive-layout.mobile#mobile"
+      "responsive-layout.desktop#desktop", "responsive-layout.mobile#mobile",
 
-      
+      //Ejemplo de Tab layouts
+      "tab-layout#home"
     ]
   },
   "rich-text#BloqueReu": {

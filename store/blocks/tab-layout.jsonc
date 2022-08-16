@@ -1,0 +1,67 @@
+{
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"]
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2"
+      ]
+  },
+
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2"
+      ]
+  },
+
+  //Pestañas de diseño de la tienda
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "idPestaña1",
+      "label": "Pestaña 1",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "idPestaña2",
+      "label": "Pestaña 2"
+    }
+  },
+
+  "tab-content.item#1": {
+    "children": [
+      "rich-text#1"
+    ],
+    "props": {
+      "tabId": "idPestaña1"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+      "rich-text#2"
+    ],
+    "props": {
+      "tabId": "idPestaña2"
+    }
+  },
+
+  //contenido
+
+  "rich-text#1": {
+    "props": {
+      "text": "Texto para el contenido de la pestaña 1",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Texto para el contenido de la pestaña 2",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  }
+}
