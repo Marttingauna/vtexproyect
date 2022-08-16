@@ -30,7 +30,7 @@
       "label": "Pestaña 2"
     }
   },
-
+    //Contenido de cada pestaña de diseño de la tienda
   "tab-content.item#1": {
     "children": [
       "rich-text#1"
@@ -48,7 +48,7 @@
     }
   },
 
-  //contenido
+  
 
   "rich-text#1": {
     "props": {
