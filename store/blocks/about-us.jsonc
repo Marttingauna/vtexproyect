@@ -1,0 +1,39 @@
+{
+  "store.custom#about-us": {
+    "blocks": ["flex-layout.row#about-us"]
+  },
+  "flex-layout.row#about-us": {
+    "children": [
+      "image#about-us",
+      "flex-layout.col#text-about-us"
+    ]
+  },
+  //Defino sus bloques hijos para crear el diseño completo.
+
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "rich-text#about-title",
+      "rich-text#about-content"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-title": {
+    "props": {
+        "text": "# Acerca del tema mínimo"
+    }
+  },
+  "rich-text#about-content": {
+    "props": {
+      "text":
+        " Este es el tema mínimo de VTEX, puede usarlo para probar el uso de bloques y construir su primera tienda desde cero."
+    }
+  },
+  "image#about-us": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png",
+      "maxHeight": "600px"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   //CSS Handles y personalizar bloques
   "disclosure-layout#css": {
-    "children": ["disclosure-trigger#css", "disclosure-content#css", "disclosure-state-indicator"]
+    "children": ["disclosure-trigger#css", "disclosure-content#css"]
   },
   "disclosure-trigger#css": {
     "children": ["rich-text#css"]
@@ -16,12 +16,7 @@
     }
   },
 
-  "disclosure-state-indicator": {
-    "props": {
-      "Show": "icon-angle--down",
-      "Hide": "icon-angle--up"
-    }
-  },
+  
   //contenido del disclosure
 
   "info-card#clearance": {
