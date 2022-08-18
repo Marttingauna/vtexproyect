@@ -13,7 +13,8 @@
   "flex-layout.col#text-about-us": {
     "children": [
       "rich-text#about-title",
-      "rich-text#about-content"
+      "rich-text#about-content",
+      "rich-text#markdown-example"
     ],
     "props": {
       "preventVerticalStretch": true
@@ -30,10 +31,18 @@
         " Este es el tema mínimo de VTEX, puede usarlo para probar el uso de bloques y construir su primera tienda desde cero."
     }
   },
+  "rich-text#markdown-example": {
+    "props": {
+      "text": "Uso de markdown en bloque rich-text, mas informacion de como usar [markdown](https://www.markdownguide.org/cheat-sheet/) \n # My title h1 \n Insert a paragraph here \n ## My title h2 \n Insert the second paragraph here \n Include a list here \n - Item 1 \n - Item 2 \n - Item3",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
   "image#about-us": {
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png",
       "maxHeight": "600px"
     }
   }
+  
 }
