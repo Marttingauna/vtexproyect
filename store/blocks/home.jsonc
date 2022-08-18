@@ -1,8 +1,6 @@
 {
   "store.home": {
-    "blocks": [
-      "disclosure-layout-group#group"
-    ]
+    "blocks": ["disclosure-layout-group#group"]
   },
 
   "disclosure-layout-group#group": {
@@ -12,12 +10,25 @@
       "disclosure-layout#slider",
       "disclosure-layout#responsive",
       "disclosure-layout#tab",
-      "disclosure-layout#modal",//Modal accionado por un disparador
-      "disclosure-layout#list",//Slider con vista rapida
-      "disclosure-layout#stack",//Bloque pila de diseño
+      "disclosure-layout#modal", //Modal accionado por un disparador
+      "disclosure-layout#list", //Slider con vista rapida
+      "disclosure-layout#stack", //Bloque pila de diseño
       "disclosure-layout#css" //CSS Handles y personalizar bloques
     ]
   }
 
-  
+  /*
+  --Estilos globales
+  En style.json, reemplace cada ocurrencia de color que encuentre, sustituyendo:
+  #3f3f40 con #e68e94
+  Cambie el tamaño de fuente para un encabezado de nivel 1 para que su altura sea ahora de 2,5 rem:
+
+    "heading-1": {
+        "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+        "fontWeight": "700",
++       "fontSize": "2.5rem",
+        "textTransform": "initial",
+        "letterSpacing": "0"
+    },
+  */
 }
