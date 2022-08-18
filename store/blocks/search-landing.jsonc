@@ -1,0 +1,29 @@
+{
+  // Creación de una página de destino de búsqueda personalizada
+  "store.custom#landing": {
+    "blocks": ["image#landingbanner", "search-result-layout.customQuery"]
+  },
+  "image#landingbanner": {
+    "props": {
+      "src": "https://arcencohogareasy.vtexassets.com/assets/vtex.file-manager-graphql/images/e3a16ecd-3baf-405f-bc3d-6eb89283fe00___657df8d825264a1edfc6f7b6f706b588.jpg",
+      "minWidth": "100%"
+    }
+  },
+  /*
+    Defina el bloque search-result-layout.customQuery con las propiedades:
+  */
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE", // Ordena por última fecha de lanzamiento;
+        "simulationBehavior": "default", //
+        "orderByField": "OrderByReleaseDateDESC", // Ordena por última fecha de lanzamiento
+        "hideUnavailableItems": true, // Oculta elementos no disponibles
+        "maxItemsPerPage": 8, // Maximo de productos por página
+        // "queryField": "aqui va la consulta",
+        "mapField": "ft" // mapField es el campo que se va a buscar
+      }
+    },
+    "blocks": ["search-result-layout.desktop"]
+  }
+}
