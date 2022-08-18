@@ -1,4 +1,20 @@
 {
+
+  "disclosure-layout#list": {
+    "children": ["disclosure-trigger#list", "disclosure-content#list"]
+  },
+  "disclosure-trigger#list": {
+    "children": ["rich-text#list"]
+  },
+  "disclosure-content#list": {
+    "children": ["list-context.product-list"]
+  },
+  "rich-text#list": {
+    "props": {
+      "text": "**Ejemplo slider con vista rapida**"
+    }
+  },
+  //contenido del disclosure
   "list-context.product-list": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout"]

@@ -1,12 +1,22 @@
 {
-  "tab-layout#home": {
-    "children": ["rich-text#dividertab", "tab-list#home", "tab-content#home"]
-  },
 
-  "rich-text#dividertab": {
+  "disclosure-layout#tab": {
+    "children": ["disclosure-trigger#tab", "disclosure-content#tab"]
+  },
+  "disclosure-trigger#tab": {
+    "children": ["rich-text#tab"]
+  },
+  "disclosure-content#tab": {
+    "children": ["tab-layout#home"]
+  },
+  "rich-text#tab": {
     "props": {
-      "text": "**Ejemplo tab list**"
+      "text": "**Ejemplo tab layout**"
     }
+  },
+  //contenido del disclosure
+  "tab-layout#home": {
+    "children": [ "tab-list#home", "tab-content#home"]
   },
 
   "tab-list#home": {

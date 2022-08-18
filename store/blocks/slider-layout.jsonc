@@ -1,4 +1,20 @@
 {
+  //Slider Layout
+  "disclosure-layout#slider": {
+    "children": ["disclosure-trigger#slider", "disclosure-content#slider"]
+  },
+  "disclosure-trigger#slider": {
+    "children": ["rich-text#slider"]
+  },
+  "disclosure-content#slider": {
+    "children": ["slider-layout#home"]
+  },
+  "rich-text#slider": {
+    "props": {
+      "text": "**Ejemplo Slider Layout**"
+    }
+  },
+  //contenido del disclosure
   "slider-layout#home": {
     "children": ["image#brand1", "image#brand2", "image#brand3", "image#brand4", "image#brand5", "image#brand6"],
     "props": {

@@ -1,4 +1,20 @@
 {
+//Modal accionado por un disparador
+  "disclosure-layout#modal": {
+    "children": ["disclosure-trigger#modal", "disclosure-content#modal"]
+  },
+  "disclosure-trigger#modal": {
+    "children": ["rich-text#modal"]
+  },
+  "disclosure-content#modal": {
+    "children": ["modal-trigger#first"]
+  },
+  "rich-text#modal": {
+    "props": {
+      "text": "**Ejemplo Modal accionado por un disparador**"
+    }
+  },
+  //contenido del disclosure
   "modal-trigger#first": {
     "children": [
       "rich-text#dividermodal",
