@@ -1,12 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "disclosure-layout-group#group",
-
-      //CSS Handles y personalizar bloques
-      "rich-text#css-handles",
-      "info-card#clearance",
-      "info-card#vintage"
+      "disclosure-layout-group#group"
     ]
   },
 
@@ -19,8 +14,10 @@
       "disclosure-layout#tab",
       "disclosure-layout#modal",//Modal accionado por un disparador
       "disclosure-layout#list",//Slider con vista rapida
-      "disclosure-layout#stack"//Bloque pila de diseño
-      
+      "disclosure-layout#stack",//Bloque pila de diseño
+      "disclosure-layout#css" //CSS Handles y personalizar bloques
     ]
   }
+
+  
 }
