@@ -1,0 +1,29 @@
+{
+  "stack-layout#cta": {
+    "children": ["rich-text#dividerStack", "image#cta", "link#cta"]
+  },
+  "rich-text#dividerStack": {
+    "props": {
+      "text": "**Ejemplo Layout stack**"
+    }
+  },
+  "image#cta": {
+    "props": {
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 400,
+      "src": "https://static.vecteezy.com/system/resources/previews/004/434/048/large_2x/black-friday-super-sale-realistic-black-gifts-boxes-pattern-with-gift-box-with-red-bow-dark-background-golden-text-lettering-horizontal-banner-poster-header-website-illustration-free-vector.jpg"
+    }
+  },
+  "link#cta": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "large"
+      },
+      "href": "/washer",
+      "label": "Check these awesome discounts"
+    }
+  }
+}

@@ -21,7 +21,10 @@
       "modal-trigger#first",
 
       //Vista rapida
-      "list-context.product-list"
+      "list-context.product-list",
+
+      //Bloque pila de diseño
+      "stack-layout#cta"
     ]
   },
   "rich-text#BloqueReu": {

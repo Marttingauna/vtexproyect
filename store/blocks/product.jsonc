@@ -1,46 +1,148 @@
+// {
+//   // Pagina de producto en especifico para el cliente
+//   "store.product": {
+//     "children": ["rich-text#BloqueReu","breadcrumb","flex-layout.row#main"]
+//   },
+
+//   // Definicion de bloque layout para producto
+//   "flex-layout.row#main": {
+//     "props": {
+//       "marginTop": 6
+//     },
+//     "children": [
+//       "flex-layout.col#left",
+//       "flex-layout.col#right"
+//     ]
+//   },
+//   //La columna de la izquierda debe contener un ;product-images
+//   "flex-layout.col#left": {
+//     "children": [
+//       "product-images"
+//     ]
+//   },
+//   "flex-layout.col#right": {
+//     "props": {
+//       "showSavings": true,
+//       "showListPrice": true,
+//       "preventVerticalStretch": true,
+//       "verticalAlign": "middle"
+//     },
+//     "children": [
+//       "product-name",
+//       "product-identifier.product",
+//       "product-price",
+//       "flex-layout.row#qty-sku",
+//       "shipping-simulator",
+//       "buy-button"
+//     ]
+//   },
+//   "flex-layout.row#qty-sku": {
+//     "children": [
+//       "sku-selector",
+//       "product-quantity"
+//     ]
+//   }
+
+// }
+
+//Ejemplo de pagina de producto para mostrar condicionalmente un banner superior
+
+//product.jsonc
 {
-  // Pagina de producto en especifico para el cliente
   "store.product": {
-    "children": ["rich-text#BloqueReu","breadcrumb","flex-layout.row#main"]
+    "children": [
+      "condition-layout.product",
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main"
+    ]
   },
 
-  // Definicion de bloque layout para producto
-  "flex-layout.row#main": {
+  "condition-layout.product": {
+    "children": ["condition.product#retro-mixer"]
+  },
+
+  "condition.product#retro-mixer": {
     "props": {
-      "marginTop": 6
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "1223131"
+        }
+      ]
     },
-    "children": [
-      "flex-layout.col#left",
-      "flex-layout.col#right"
-    ]
+    "children": ["image#retro-mixer-banner"]
   },
-  //La columna de la izquierda debe contener un ;product-images
-  "flex-layout.col#left": {
-    "children": [
-      "product-images"
-    ]
-  },
-  "flex-layout.col#right": {
+
+  "image#retro-mixer-banner": {
     "props": {
-      "showSavings": true,
-      "showListPrice": true,
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR78_xPsUuohuNDCMjfzByVx-_QQfHenDIo_0WQxRbJ1aHR3RxfF0MkXeTK_6y-TDqzqs&usqp=CAU",
+      "width": "100%",
+      "height": "300px",
+      "blockClass": "cover"
+    }
+  }, 
+
+  //Resto del contenido de la pagina de producto
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 20
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 9,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "product-main"
+    },
+    "children": ["product-images", "flex-layout.col#right-col"]
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "thumbnailsOrientation": "vertical"
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
       "preventVerticalStretch": true,
-      "verticalAlign": "middle"
+      "rowGap": 0
     },
     "children": [
       "product-name",
-      "product-identifier.product",
-      "product-price",
-      "flex-layout.row#qty-sku",
+      "product-price#product-details",
+      "sku-selector",
+      "flex-layout.row#buy-button",
       "shipping-simulator",
-      "buy-button"
+      "share#default"
     ]
   },
-  "flex-layout.row#qty-sku": {
-    "children": [
-      "sku-selector",
-      "product-quantity"
-    ]
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["buy-button"]
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
   }
-  
 }
